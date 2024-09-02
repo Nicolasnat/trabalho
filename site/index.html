@@ -1,361 +1,231 @@
-html {
-    margin: 0;
-}
 
-body {
-    margin: 0;
-    background: linear-gradient(to bottom, #3C0A14, #1E0910);
-    color: #fff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStart</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- header  -->
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
 
-/* Header */
+        <!-- burguer -->
+      <nav class="nav"> 
+        <button class="hamburger"></button>
 
-    header {
-        width: 100%;
-        height: 100px;
-        background-color: #04293A;
-        position: relative;
-        top: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-content: center;
+        <!-- Navbar -->
+        <ul class="nav-bar">
+            <li><a href="#home" class="mymenu" title="Inicio">Home</a></li>
+            <li><a href="#jg" class="mymenu" title="Jogos">Jogos</a></li>
+            <li><a href="#info" class="mymenu" title="Informações">Informações</a></li>
+        </ul></nav>
+    </header>
     
-        /* logo */
-        .logo {
-            display: flex;
-            align-items: center;
+    <div class="container">
 
-            img {
+        <section id="home">
+            <div class="container_home">
 
-                max-width: 10vw;
-                object-fit: cover;
-                margin-left: 3rem;
+                <div class="bolinha_azul esquerda"></div>
 
-            }
-        }
+                <img id="vava" src="./img/vava.png" alt="Foto Inicial">
 
+                <div class="bolinha_azul direita"></div>
+
+            </div>
+            <h1>Os 05 jogos mais Famosos da atualidade!</h1>
+        </section>  
+
+        <!-- Container -->
+<section class="container">
+    <!-- Puxar id para jogos -->
+        <div id="jg"></div>
+
+
+        <section class="jogos">
+
+            <!-- titulos -->
+            <div class="nome">
+                <div id="linha1"></div>
+            <h2>Roblox</h2>
+                <div id="linha2"></div>
+            </div>
+
+
+             <!-- div de padronização de texto e imagem Roblox-->
+             <div class="innerSection">
+               
+                <h3>Um pouco fora do mundo dos jogos de tiro violentos, Roblox se tornou uma nova potência entre jogadores jovens.
+  
+                    <br><br>
+
+                    O game permite que usuários criem suas próprias aventuras e joguem as jornadas criadas por outros em uma relação simbiótica de criação e diversão.
+     
+                    <br><br>            
+
+                    Disponível para PC, Xbox, Android e iPhone, o game já teve picos de até 30 milhões de usuários ativos.
+                    </h3>
+                
+                    <!-- Imagem -->
+                    <img src="./img/roblox.png" alt="Roblox">
+            </div>
+
+        </section>
+
+
+<!-- section de padronização de container minecraft-->
+<section class="container">
+
+        <!-- Titulos -->
+
+            <div class="nome">
+                <div id="linha1"></div>
+            <h2>Minecraft</h2>
+                <div id="linha2"></div>
+            </div>
+
+
+            <!-- div de padronização de texto e imagem minecraft-->
+            <div class="innerSection">
         
-        /*Navbar  */
-        .nav-bar {
-            margin-top: 2rem;
-            margin-right: 5rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 0;
-            gap: 2rem;
-            list-style: none;
+                    <h3> Minecraft é um jogo em que você constrói coisas com blocos, em um mundo virtual aberto e livre para explorar.
+                        
+                        <br><br>
 
-            li {
-                a {
-                    font-size: 20px;
-                    text-decoration: none;
-                    color: #fff;
-                }
-            }
-        }
-    }
+                        É o que os gamers chamam de 'sandbox', porque funciona mesmo como uma caixa de areia, em que o único limite para o jogador é a própria imaginação e a prática.
+                        
+                        <br><br>
 
-    /* Parte inicial */
-
-    #home {
-        .container_home {
-
-            /* bolinhas */
-            .bolinha_azul{
-                background: #145A81;
-                position: absolute;
-                z-index: 1;
-                width: 8vw;
-                height: 8vw;
-            /* Estilo para bolinha azul da esquerda */
-            }
-            
-            .bolinha_azul.esquerda {
-                border-bottom-right-radius: 90px;
-                margin-top: 39vw;
-                left: 0; /* Posiciona a bolinha à esquerda */
-            }
-            
-            /* Estilo para bolinha azul da direita */
-            .bolinha_azul.direita {
-                border-bottom-left-radius: 90px;
-                margin: -76px 0 87px 169px;
-                right: 0; /* Posiciona a bolinha à direita */
-            }
-            
-            /* imagem inical */
-
-            #vava {
-                width: 100%;
-                object-fit: contain;
-                position: relative;
-                z-index: 2;
-            }
-
-        }
-
-        /* Texto */
-        h1 {
-
-            width: 25vw;
-            font-size: 4vw;
-            position: absolute;
-            top: 18vw;
-            margin-left: 5vw;
-            z-index: 3;
-        }
-
-
-
-    }
-
-    /* Titulos */
-
-    .nome {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: rem;
-        margin-top: 10px;
-        margin-bottom: 10px;
+                        No game, é preciso minerar e coletar recursos para construir coisas - ou para sobreviver, mas a gente já chega nessa parte.
         
-        /* Nome */
-        h2 {
+                        <br><br>
 
-            font-size: 2vw;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            background: linear-gradient(to left, #04293A, #789BDF);
-            -webkit-background-clip: text; /* Aplica o gradiente no texto */
-            -webkit-text-fill-color: transparent; /* Faz com que o texto seja "transparente", exibindo apenas o gradiente */
-        }
+                        Não há níveis para superar ou pontos num placar. Você imagina o que quer fazer, junta os recursos que vai precisar e constrói. Existem criações incríveis, que vão desde réplicas de fases de outros games, como Sonic ou Zelda, até recriações de cidades inteiras do mundo real!
+                        
+                        </h3>
+                        
+                        <!-- Imagem -->
+                        <img src="./img/mine.png" alt="">
+                </div>
+                </section>
+            </section>
 
-        /* Linhas */
+            <!-- section de padronização de container fortnite-->
+<section class="container">
 
-        div {
-            width: 25vw;
-            height: 2px;
-            background-color: #5C76FF;
-            filter: blur(3px);
-        }
+            <div class="nome">
+                <div id="linha1"></div>
+            <h2>Fortnite</h2>
+                <div id="linha2"></div>
+            </div>
 
-    }
+            <!-- div de padronização de texto e imagem Fortinite-->        
+             <div class = "innerSection">
+                    <h3>Fortnite é um jogo battle royale gratuito da Epic Games, e um dos mais famosos e influentes da indústria. 
+                      
+                        <br><br>
 
-    /* Sections */
-
-    .innerSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 5vw;
-        margin: 10px;
-        transition: 2s;
-        /* imagens */
-
-        img {
-            width: 35vw;
-            margin-right: 5vw;
-            border: 5px;
-            border-color: #E8B0B9;
-            border-radius: 50px;
-            border-style: solid;
-        }
-
-        /* Textos */
-
-        h3 {
-            margin-left: 5vw;
-            font-size: 1.5vw;
-        }
-    }
-
-        /* Informações */
-    #info{
-        h3{
-            font-size: 2vw;
-            margin-left: 18vw;
-            margin-bottom: 5rem;
-        }
-    }
-
-    /* Rodapé */
-
-    .rodape{
-        height: 150px;
-        background: #04293A;
-        display: flex;
-        align-items: center;
-        border: 5px #145A81;
-        border-style: solid;
-
-    /* bolinha */
-
-        .bolinha{
-            width: 130px;
-            height: 150px;
-            background: #789BDF;
-            border-top-right-radius: 90%;
-            border-bottom-right-radius: 80%;
-        }
-
-        /* Texto */
-
-        h3{
-            margin-left: 30vw;
-        }
-    }
+                        Apesar do gameplay consistir em batalhas rápidas, o jogo possui uma grande história ao seu redor, 
+                        que vai ficando mais profunda em cada capítulo ou temporada nova.
+                    </h3>
+            
+                        <!-- Imagem -->
+                        <img src="./img/fort.png" alt="">
+                    </div>
+</section>
 
 
-    /* Hamburguer mobile */
-    .hamburger{
-        height: 10px;
-        display: none;
-        padding: 0;
-        border: none;
-        background: none;
-        border-top: 3px solid #f5f5f5;
-        cursor: pointer;
-        margin-top: 0vw;
-    }
+<section class="container">  
 
-    .hamburger::before,
-    .hamburger::after{
-        content: " ";
-        display: block;
-        width: 30px;
-        height: 3px;
-        background: #fff;
-        margin-top: 5px;
+      <!-- Titulo  -->
 
-    }
-    /* Responsividade 768px */
+        <div class="nome">
+            <div id="linha1"></div>
+        <h2>Free Fire</h2>
+            <div id="linha2"></div>
+        </div>
 
-    @media only screen and (max-width:768px){
-    
+        <!-- div de padronização de texto e imagem Free Fire-->
+        <div class = "innerSection">
 
-        .nav-bar{
-            margin-right: 2rem      ;
-        }
-        .innerSection{
-            h3{
-                font-size: 2.5vw;
-            }
-        }
-    }
+            <h3>
+        Free Fire é um dos jogos de uma categoria chamada de Battle Royale, ou seja,
+        um estilo de jogo em que o objetivo principal é ser o único sobrevivente entre dezenas de jogadores vivos no mesmo mapa.
+       
+        <br><br>
 
-    /* Responsividade 450px */
-    @media screen and (max-width: 450px){
+        De tempos em tempos,
+        uma zona infectada avança ao redor de um ponto e os jogadores são obrigados a se reposicionar.
+            </h3>
 
-    .innerSection{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
+            <!-- Imagem -->
+            <img src="./img/FF.png" alt="">
 
-        h3{
-            font-size: 2.5vw;
-        }
-    }
-}
+        </div>
+</section>
 
-/* Responsividade 540px */
-@media screen and (max-width:540px){
-    header{
-        height: 20vw;
-        .logo{
-            height: 10vh;
-        }
-        }
 
-        /* Hamburguer */
-    .hamburger{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        z-index: 5;
-    }
+       <!-- section de padronização de container fortnite-->
+<section class="container">      
 
-    /* Navbar */
-    .nav-bar{
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-top: 0px;
-        right: 0px;
-        width: 100%;
-        height: 50vh;
-        padding: 0;
-        margin-right: 0px;
-        background: #04293A;
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-        z-index: 4;
+    <!-- Titulo -->
+
+    <div class="nome">
+        <div id="linha1"></div>
+    <h2>Call Of Duty hQ+</h2>
+        <div id="linha2"></div>
+    </div>
+
+    <!-- div de padronização de texto e imagem Call Of Duty -->
+    <div class = "innerSection">
         
-    
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-    
-        pointer-events: none;
-    }
-    /* Navbar a */
-    .nav-bar a {
-        font-size: 24px;
-        opacity: 0;
-      }
-    
-      /* transition */
-      .nav-bar li:nth-child(1) a {
-        transition: 0.5s 0.2s;
-      }
-    
-      .nav-bar li:nth-child(2) a {
-        transition: 0.5s 0.4s;
-      }
-    
-      .nav-bar li:nth-child(3) a {
-        transition: 0.5s 0.6s;
-      }
-    
-      /* Estilos ativos */
-    
-      .nav.active .nav-bar {
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-        margin-right: 0px;
-      }
-    
-      .nav.active .nav-bar a {
-        opacity: 1;
-      }
-    
-      .nav.active .hamburger {
-        position: absolute;
-        top: 26px;
-        right: 16px;
-        border-top-color: transparent;
-      }
-    
-      .nav.active .hamburger::before {
-        transform: rotate(135deg);
-      }
-    
-      .nav.active .hamburger::after {
-        transform: rotate(-125deg);
-        position: relative;
-        top: -7px;
-      }
 
-      /* Texto Home */
-      #home{
-        h1{
-            position: absolute;
-            top: 13vh;
-        }
-      }
-}
+        <h3>Call of Duty é uma série de jogos eletrônicos de tiro em primeira pessoa e franquia de mídia publicada
+            pela Activision.
+            
+            <br><br>
+
+            O primeiro título da série foi lançado em 2003 exclusivamente para computadores. 
+
+            <br><br>
+
+            Mais tarde a série se expandiu para os mais variados sistemas, consoles, portáteis e smartphones</h3>
+    
+            <!-- Imagem -->
+            <img src="./img/cod.png" alt="">
+</div>
+</section>
+
+
+
+        <div id="info">
+
+            <!-- titulo -->
+
+            <div class="nome">
+                <div id="linha1"></div>
+            <h2>Informações</h2>
+                <div id="linha2"></div>
+            </div>
+
+            <h3>Os jogos mais famosos da atualidade: call of duty, free fire, minecraft, fortnite, roblox.</h3>
+        </div>
+      </section>
+</div>
+
+<!-- Rodapé -->
+
+    <div class="rodape">
+        <div class="bolinha"></div>
+        <h3>@students of ETE Porto Digital</h3>
+    </div>
+
+</body>
+</html>
